@@ -1,0 +1,32 @@
+<script>
+import NavBar from "../components/NavBar.vue"
+import Hero from "../components/Hero.vue"
+export default {
+  components: {
+    NavBar,
+    Hero
+  }
+}
+</script>
+
+<template>
+  <div class="header-container">
+    <NavBar />
+    <Hero />
+  </div>
+</template>
+
+<style scoped lang="scss">
+.header-container {
+  background-image: url(../assets/images/index-banner-bg.png);
+  height: 100vh;
+  width: 100wh;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  position: relative;
+
+}
+
+
+</style>
