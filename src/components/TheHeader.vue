@@ -18,9 +18,9 @@ export default {
 
 <style scoped lang="scss">
 .header-container {
-  background-image: url(../assets/images/index-banner-bg.png);
   height: 100vh;
-  width: 100wh;
+  background-image: url(../assets/images/index-banner-bg.png);
+  background-color: black;
   background-repeat: no-repeat;
   position: relative;
   overflow: hidden;

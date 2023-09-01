@@ -6,7 +6,7 @@ export default {
 
 <template>
   <div class="container d-flex">
-    
+
     <div class="bg-box"></div>
     <div class="box d-flex flex-column gap-2 mt-5">
       <h3>Game With Live Streaming</h3>
@@ -43,14 +43,14 @@ export default {
 <style scoped lang="scss">
 @use "../variables" as *;
 
-.container{
+.container {
   margin-top: 7rem;
 }
 
 .box {
   h3 {
     color: $colore2;
-    
+
   }
 
   h1 {
@@ -79,25 +79,29 @@ export default {
     &:hover .border-outline-play {
       border-color: $colore1;
     }
-  }
 
-  .border-outline {
-    border: 4px solid transparent;
-    border-radius: 2rem;
-  }
+    .border-outline {
+      border: 4px solid transparent;
+      border-radius: 2rem;
 
-  .box-live-button {
-    background-color: $colore1;
-    padding: 1rem;
-    border-radius: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+      .box-live-button {
+        background-color: $colore1;
+        padding: 1rem;
+        border-radius: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-    h5 {
-      margin: 0;
+        h5 {
+          margin: 0;
+        }
+      }
     }
   }
+
+
+
+
 
 
   .box-live-button-play {
@@ -120,10 +124,10 @@ export default {
   background-repeat: no-repeat;
 }
 
-.soldier-img{
+.soldier-img {
 
-margin-right: -20%;
-margin-top: -10%;
-  
+  margin-right: -20%;
+  margin-top: -10%;
+
 }
 </style>
