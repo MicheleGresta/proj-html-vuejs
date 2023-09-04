@@ -1,5 +1,4 @@
 <script>
-
 export default {
 
     props: {
@@ -24,15 +23,17 @@ export default {
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
         </div>
-        <p>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum beatae perspiciatis aspernatur ducimus facere
+        <p>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Harum beatae perspiciatis aspernatur ducimus facere
             amet iure placeat numquam."</p>
         <div class="user-box d-flex gap-3 align-items-center">
             <div class="profile-pic">
-                <img :src="singleUser.image" alt="">
+                <img :src=singleUser.image alt="">
             </div>
             <div class="user-info">
                 <h4>{{ singleUser.name }}</h4>
                 <p> {{ singleUser.country }}</p>
+                
             </div>
         </div>
 
@@ -45,6 +46,8 @@ export default {
 .box {
     background-color: $colore5;
     border-radius: 1.5rem;
+    width: 340px;
+    margin: 1rem 0;
 
     p {
         color: white;

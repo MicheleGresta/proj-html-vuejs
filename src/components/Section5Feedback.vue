@@ -7,7 +7,10 @@ export default {
         FeedbackCard
     },
     data() {
-        UsersFeedback
+        return{
+            UsersFeedback
+        }
+        
     }
 
 
@@ -31,15 +34,17 @@ export default {
             </div>
         </div>
 
-        <div class="row">
+        <div class="row py-3">
             <div class="col-1"></div>
             <div class="col-10">
-                <div class="row">
-                    <div class="col-4" 
+                <div class="card-container d-flex gap-3">
+                     <div class="card-settings" 
                     v-for="singleUserCard in UsersFeedback">
                         <FeedbackCard :singleUser="singleUserCard" />
                     </div>
                 </div>
+                   
+                
 
             </div>
         </div>
@@ -69,8 +74,25 @@ export default {
 
 <style scoped lang="scss">
 @use "../variables" as *;
+.card-container{
+    overflow: auto;
+    &::-webkit-scrollbar{
+        background-color: grey;
+        border-radius: 2rem;
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: $colore5;
+        border-radius: 2rem;
+    }
+
+    
+
+}
 
 
+.row-stats{
+    overflow: auto;
+}
 .box {
     h4 {
         color: $colore2;
