@@ -28,7 +28,8 @@ export default {
             amet iure placeat numquam."</p>
         <div class="user-box d-flex gap-3 align-items-center">
             <div class="profile-pic">
-                <img :src=singleUser.image alt="">
+                <img src="../assets/images/testimonials-image-1.png" alt="">
+                
             </div>
             <div class="user-info">
                 <h4>{{ singleUser.name }}</h4>

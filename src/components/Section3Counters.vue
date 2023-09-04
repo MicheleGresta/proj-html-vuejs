@@ -1,7 +1,19 @@
 <script>
+// import {counterStart} from "../store"
 export default {
+    data() {
+        return {
+            
+        }
+    }
+    
 
 }
+
+
+    
+
+
 </script>
 
 <template>
@@ -11,6 +23,7 @@ export default {
             <div class="box  py-5">
                 <div class="card-container d-flex gap-3">
                     <div class="single-card d-flex flex-column gap-1 py-5">
+                        <!-- <span :class="num" :data-val="400">0</span> -->
                         <h1>1135</h1>
                         <p>Twitch Streams</p>
                     </div>
@@ -35,25 +48,30 @@ export default {
 
 <style scoped lang="scss">
 @use "../variables" as *;
-.bg-color-container{
+
+.bg-color-container {
 
     background-color: $colore3;
 
-    .container{
+    .container {
         text-align: center;
-        h2{
+
+        h2 {
             color: $colore4;
             font-size: 3rem;
         }
-        .card-container{
 
-            .single-card{
-                h1{
+        .card-container {
+
+            .single-card {
+                h1 {
                     color: $colore4;
                 }
-                p{
+
+                p {
                     color: $colore2;
                 }
+
                 border: 1px solid rgb(36, 36, 36);
                 border-radius: 2rem;
                 flex-basis: 0;
@@ -62,6 +80,4 @@ export default {
             }
         }
     }
-}
-
-</style>
+}</style>

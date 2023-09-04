@@ -146,6 +146,9 @@ export default {
     &::placeholder {
         color: white;
     }
+    &:focus{
+        background-color: rgb(75, 100, 141);
+    }
 }
 
 .input-group-text {
