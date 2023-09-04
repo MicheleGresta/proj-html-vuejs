@@ -62,7 +62,7 @@ export default {
 
 .bg-color-container {
     background-color: $colore3;
-    height: 100vh;
+    height: 1080px;
 
     .bg-img-container {
         height: 100%;

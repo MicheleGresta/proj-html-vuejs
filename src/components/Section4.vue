@@ -77,11 +77,13 @@ export default {
 
 .bg-color-container {
     background-color: $colore3;
-    height: 100vh;
+    height: 1080px;
 
     .bg-img-container {
+        
         background-image: url(../assets/images/live-streaming-bg.png);
         background-repeat: no-repeat;
+        background-size: cover;
 
         .container {
             .box {
