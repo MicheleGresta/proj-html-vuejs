@@ -12,12 +12,58 @@ export default {
         <img src="../assets/images/logo.png" alt="">
       </div>
 
-      <div class="box-nav-bar d-flex gap-3 align-items-center">
+      <div class="box-nav-bar d-flex align-items-center">
         <h4>Home</h4>
-        <h4>Games<i class="fa-solid fa-angle-down"></i> </h4>
-        <h4>Shop<i class="fa-solid fa-angle-down"></i></h4>
-        <h4>Pages<i class="fa-solid fa-angle-down"></i></h4>
-        <h4>Blog<i class="fa-solid fa-angle-down"></i></h4>
+        
+        <div class="dropdown">
+          <button class="btn dropdown-toggle d-flex align-items-center gap-2">
+            <h4>Games</h4><i class="fa-solid fa-angle-down"></i>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Games</a></li>
+            <li><a class="dropdown-item" href="#">Games Details</a></li>
+            <li><a class="dropdown-item" href="#">Match Details</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button class="btn dropdown-toggle d-flex align-items-center gap-2">
+            <h4>Games</h4><i class="fa-solid fa-angle-down"></i>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Shop</a></li>
+            <li><a class="dropdown-item" href="#">Shop Single</a></li>
+            <li><a class="dropdown-item" href="#">Shop Single 2</a></li>
+            <li><a class="dropdown-item" href="#">Shop Single 3</a></li>
+            <li><a class="dropdown-item" href="#">Shop Single 4</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button class="btn dropdown-toggle d-flex align-items-center gap-2">
+            <h4>Games</h4><i class="fa-solid fa-angle-down"></i>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">About Us</a></li>
+            <li><a class="dropdown-item" href="#">Team</a></li>
+            <li><a class="dropdown-item" href="#">Player</a></li>
+            <li><a class="dropdown-item" href="#">Upcoming Matches</a></li>
+            <li><a class="dropdown-item" href="#">FAQs</a></li>
+            <li><a class="dropdown-item" href="#">Privacy Policy</a></li>
+            <li><a class="dropdown-item" href="#">Terms</a></li>
+            <li><a class="dropdown-item" href="#">Privacy Policy</a></li>
+            <li><a class="dropdown-item" href="#">Terms</a></li>
+            <li><a class="dropdown-item" href="#">Coming Soon</a></li>
+            <li><a class="dropdown-item" href="#">Error</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button class="btn dropdown-toggle d-flex align-items-center gap-2">
+            <h4>Games</h4><i class="fa-solid fa-angle-down"></i>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Blog</a></li>
+            <li><a class="dropdown-item" href="#">Blog Single</a></li>
+          </ul>
+        </div>
         <h4>Contact</h4>
       </div>
 
@@ -39,13 +85,45 @@ export default {
         </div>
       </div>
     </div>
-</div>
+  </div>
 </template>
 
 <style scoped lang="scss">
 @use "../variables" as *;
 
+.dropdown{
+  ul{
+    background-color: rgb(27, 34, 46);
+    li{
+      a{
+        color: white;
+        font-size: 1.4rem;
+        &:hover{
+          background-color: transparent;
+          color: $colore2;
+        }
+      }
+    }
+  }
+}
+.dropdown > .btn{
+  
 
+    i {
+      padding-left: .2rem;
+    }
+}
+.dropdown{
+  i{
+    color: white;
+  }
+}
+.dropdown-toggle::after {
+  display: none;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
 
 .menu-fixed {
   position: fixed;
@@ -55,7 +133,8 @@ export default {
   background-color: rgba(21, 25, 35, 0.8);
   width: 100vw;
   z-index: 1300;
-  .container{
+
+  .container {
     height: 130px;
   }
 }
@@ -70,13 +149,7 @@ export default {
     color: white;
     margin: 0;
 
-    &:hover {
-      color: $colore2;
-    }
-
-    i {
-      padding-left: .2rem;
-    }
+    
   }
 }
 
@@ -130,4 +203,5 @@ export default {
       border-color: $colore1;
     }
   }
-}</style>
+}
+</style>
