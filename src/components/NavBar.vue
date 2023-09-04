@@ -90,7 +90,9 @@ export default {
 
 <style scoped lang="scss">
 @use "../variables" as *;
-
+.btn:hover h4,i{
+  color: $colore2;
+}
 .dropdown{
   ul{
     background-color: rgb(27, 34, 46);
@@ -204,4 +206,9 @@ export default {
     }
   }
 }
+
+
+
+
+
 </style>
