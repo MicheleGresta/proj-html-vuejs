@@ -1,5 +1,14 @@
 <script>
+import FeedbackCard from './FeedbackCard.vue';
+import {UsersFeedback} from "../store.js";
+
 export default {
+    components: {
+        FeedbackCard
+    },
+    data() {
+        UsersFeedback
+    }
 
 
 }
@@ -25,6 +34,12 @@ export default {
         <div class="row">
             <div class="col-1"></div>
             <div class="col-10">
+                <div class="row">
+                    <div class="col-4" 
+                    v-for="singleUserCard in UsersFeedback">
+                        <FeedbackCard :singleUser="singleUserCard" />
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -84,6 +99,7 @@ export default {
         top: 5rem;
         left: -22rem;
     }
+
     .img-discount-2 {
         position: absolute;
         top: -5rem;
@@ -97,10 +113,10 @@ export default {
             background-color: rgba(0, 0, 0, 0.425);
             padding: 1rem 3rem;
             border-radius: 2rem;
-            &:hover{
+
+            &:hover {
                 cursor: pointer;
             }
         }
     }
-}
-</style>
+}</style>
